@@ -1,0 +1,249 @@
+/* Variáveis */
+:root {
+    --Roboto: 'Roboto', sans-serif; 
+    --Open: 'Open Sans', sans-serif;
+
+    --red: #E63946;
+    --claro: #F1FAEE;
+    --azul-claro: #A8DADC;
+    --azul-medio: #457B9D;
+    --azul-escuro: #1D3557;
+
+    --grad-silver: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --grad-snow: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    --grad-azul: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    --grad-clean: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+
+/* Boot */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.center {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.w33 {
+    width: 33%;
+    padding: 0 1%;
+}
+
+.w40 {
+    width: 40%;
+    padding: 0 1%;
+}
+
+.w50 {
+    width: 50%;
+    padding: 0 1%;
+}
+
+.w60 {
+    width: 60%;
+    padding: 0 1%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+/* header */
+
+header .header {
+    width: 100%;
+    padding: 10px;
+    background: var(--azul-medio);
+    border-bottom: 5px solid var(--red);
+}
+
+.content-header {
+    border-bottom: 1px solid var(--azul-claro);
+}
+
+.logo-header h3 {
+    font-family: var(--Roboto);
+    font-size: 21px;
+    font-weight: 300;
+    color: var(--claro);
+}
+
+.logo-header h3 span {
+    font-weight: 500;
+    color: var(--red);
+}
+
+.menu-bar {
+    font-size: 25px;
+    color: var(--red);
+    display: none;
+    cursor: pointer;
+}
+
+.menu-desktop .nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4px;
+}
+
+.menu-desktop .nav li a {
+    color: var(--claro);
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: var(--Roboto);
+}
+
+.menu-desktop .nav li a:hover {
+    color: var(--red);
+}
+
+
+
+/* Section - Capa */
+
+section .section-capa {
+    width: 100%;
+    padding: 200px 5%;
+    background: var(--grad-clean);
+}
+
+.content-capa {
+    text-align: center;
+}
+
+.content-capa .registro-capa {
+    background: var(--azul-medio);
+    padding: 65px 15px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 12px #888;
+    width: 400px;
+}
+
+.box-registro {
+    background: var(--azul-escuro);
+    border-radius: 10px;
+}
+
+.box-registro .top-box-registro {
+    padding: 20px 0;
+    background: var(--red);
+}
+
+.box-registro .top-box-registro h2 {
+    font-size: 25px;
+    color: var(--claro);
+    font-family: var(--Open);
+}
+
+.box-registro .form {
+    padding: 20px 0;
+}
+
+.box-registro .form p {
+    color: var(--claro);
+    font-family: var(--Open);
+    font-weight: 300;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.box-registro .form input[type=text],
+.box-registro .form input[type=email],
+.box-registro .form input[type=password] {
+    width: 80%;
+    padding: 5px 3px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--red);
+    text-align: center;
+    font-size: 16px;
+    color: var(--claro);
+}
+
+.box-registro .form input[type=text]:hover,
+.box-registro .form input[type=email]:hover,
+.box-registro .form input[type=password]:hover {
+    background-color: var(--azul-medio);
+}
+
+.checkbox-box {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+
+
+.box-registro .form input[type=submit] {
+    padding: 10px 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--red);
+    color: var(--claro);
+}
+
+.box-registro .form input[type=submit]:hover {
+    background-color: var(--azul-claro);
+    color: var(--red);
+    transition: 0.2s;
+}
+
+
+
+/* Responsivo*/
+
+@media screen and (max-width: 720px) {
+    .w33, .w40, .w50, .w60 {
+        width: 100% !important;
+    }
+
+    body {
+        background: #1D3557;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+    
+    section .section-capa {
+        padding: 150px 5% !important;
+    }
+
+    .content-capa .registro-capa {
+        max-width: 400px;
+        width: 400px;
+        margin: 0 auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
