@@ -354,27 +354,43 @@ section .chamada-registro {
     transition: 0.2s;
 }
 
-/* Servicos */
-section .servicos {
+/* Tecnologia */
+section .tecnologia {
     width: 100%;
     background: var(--grad-silver);
     padding: 50px 2%;
 }
 
-.servicos .content-servicos {
+.tecnologia .content-tecnologia {
     justify-content: space-between;
     display: flex;
     text-align: center;
 }
 
-.content-servicos .box-servico {
+.content-tecnologia .box-tecnologia {
     padding: 60px 15px;
 }
 
-.box-servico {
+.box-tecnologia {
     border: 2px solid var(--red);
     margin: 10px 25px;
     border-radius: 35px;
+}
+
+.box-tecnologia h2 {
+    font-size: 35px;
+    font-family: var(--Open);
+    color: var(--red);
+}
+
+.box-tecnologia h3 {
+    font-size: 23px;
+    color: var(--azul-medio);
+    font-family: var(--Roboto);
+}
+
+.box-tecnologia p {
+    font-family: var(--Open);
 }
 
 
@@ -426,11 +442,11 @@ section .servicos {
         padding: 8px 0 !important;
     }
 
-    .servicos .content-servicos {
+    .tecnologia .content-tecnologia {
         display: block;
     }
 
-    .box-servico {
+    .box-tecnologia {
         border: 0;
         border-bottom: 2px solid var(--red);
         margin: 10px 0;
