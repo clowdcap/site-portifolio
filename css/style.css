@@ -277,15 +277,78 @@ section .chamada-registro {
     padding: 10px 2%;
     background: var(--red);
     border-radius: 30px;
+    margin: 20px 0;
 }
 
 .vantagens-registro ul li {
     font-family: var(--Roboto);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
     padding: 5px 0;
+    color: var(--claro);
 }
 
+.box-newsletter {
+    text-align: center;
+    padding: 45px 0;
+    border: 1px solid var(--red);
+    border-radius: 25px;
+}
+
+.box-newsletter h2 {
+    font-size: 30px;
+    font-family: var(--Roboto);
+    color: var(--red);
+    padding: 15px 0;
+}
+
+.box-newsletter h3 {
+    font-size: 20px;
+    font-family: var(--Roboto);
+    color: var(--azul-medio);
+    padding: 15px 0;
+}
+
+.box-newsletter p {
+    font-size: 15px;
+    font-family: var(--Roboto);
+    color: var(--red);
+    padding: 15px 0;
+}
+
+.box-newsletter input[type=email] {
+    width: 80%;
+    padding: 5px 3px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--red);
+    text-align: center;
+    font-size: 16px;
+    color: var(--claro);
+    transition: 1s;
+}
+
+.box-newsletter input[type=email]:hover {
+    background-color: var(--azul-medio);
+    border-bottom: 2px solid var(--azul-claro);
+    transition: 1s;
+}
+
+.box-newsletter input[type=submit] {
+    padding: 10px 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--red);
+    color: var(--claro);
+    margin-top: 18px;
+}
+
+.box-newsletter input[type=submit]:hover {
+    background-color: var(--azul-claro);
+    color: var(--red);
+    transition: 0.2s;
+}
 
 /* Responsivo*/
 
