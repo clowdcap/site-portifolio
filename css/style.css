@@ -119,6 +119,7 @@ header .header {
 
 .menu-desktop .nav li a:hover {
     color: var(--red);
+    box-shadow: 4px 4px 12px #888;
 }
 
 
@@ -139,13 +140,15 @@ section .section-capa {
     background: var(--azul-medio);
     padding: 75px 15px;
     border-radius: 50px;
-    box-shadow: 4px 4px 12px #888;
+    box-shadow: 4px 4px 8px #555;
     width: 400px;
+    
 }
 
 .box-registro {
     background: var(--azul-escuro);
     border-radius: 10px;
+    box-shadow: inset 2px 2px 5px #222;
 }
 
 .box-registro .top-box-registro {
@@ -256,7 +259,31 @@ section .chamada-registro {
     background: var(--azul-escuro);
     padding: 20px 2%;
     border-radius: 25px;
-    box-shadow: inset 0 0 1em gold,;
+    box-shadow: inset 2px 2px 5px #222;
+}
+
+.vantagens-registro {
+    background: var(--azul-medio);
+    border-radius: 20px;
+    padding: 20px 60px;
+    box-shadow: 2px 2px 4px #222;
+    text-align: center;
+}
+
+.vantagens-registro h3 {
+    font-family: var(--Roboto);
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 2%;
+    background: var(--red);
+    border-radius: 30px;
+}
+
+.vantagens-registro ul li {
+    font-family: var(--Roboto);
+    font-size: 15px;
+    font-weight: 300;
+    padding: 5px 0;
 }
 
 
@@ -287,9 +314,6 @@ section .chamada-registro {
         max-width: 400px;
         width: 400px;
         margin: 0 auto;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     
