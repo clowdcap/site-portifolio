@@ -205,6 +205,7 @@ section .section-capa {
 .box-registro .form input[type=password]:hover {
     background-color: var(--azul-medio);
     border-bottom: 2px solid var(--azul-claro);
+    border-radius: 50px;
     transition: 1s;
 }
 
@@ -268,6 +269,7 @@ section .chamada-registro {
     padding: 20px 60px;
     box-shadow: 2px 2px 4px #222;
     text-align: center;
+    height: 400px;
 }
 
 .vantagens-registro h3 {
@@ -284,7 +286,7 @@ section .chamada-registro {
     font-family: var(--Roboto);
     font-size: 16px;
     font-weight: 300;
-    padding: 5px 0;
+    padding: 15px 0;
     color: var(--claro);
 }
 
@@ -293,6 +295,7 @@ section .chamada-registro {
     padding: 45px 0;
     border: 1px solid var(--red);
     border-radius: 25px;
+    height: 400px;
 }
 
 .box-newsletter h2 {
@@ -331,6 +334,7 @@ section .chamada-registro {
 .box-newsletter input[type=email]:hover {
     background-color: var(--azul-medio);
     border-bottom: 2px solid var(--azul-claro);
+    border-radius: 50px;
     transition: 1s;
 }
 
@@ -350,7 +354,38 @@ section .chamada-registro {
     transition: 0.2s;
 }
 
+/* Servicos */
+section .servicos {
+    width: 100%;
+    background: var(--grad-silver);
+    padding: 50px 2%;
+}
+
+.servicos .content-servicos {
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+}
+
+.content-servicos .box-servico {
+    padding: 60px 15px;
+}
+
+.box-servico {
+    border: 2px solid var(--red);
+    margin: 10px 25px;
+    border-radius: 35px;
+}
+
+
+
 /* Responsivo*/
+
+@media screen and (max-width: 980px) {
+    .vantagens-registro ul li  {
+        padding: 10px 0 !important;
+    }
+}
 
 @media screen and (max-width: 720px) {
     .w33, .w40, .w50, .w60 {
@@ -379,5 +414,30 @@ section .chamada-registro {
         margin: 0 auto;
     }
 
+    .newsletter {
+        margin-top: 60px;
+    }
+    
+    .frase-capa {
+        margin-top: 90px;
+    }
+
+    .vantagens-registro ul li  {
+        padding: 8px 0 !important;
+    }
+
+    .servicos .content-servicos {
+        display: block;
+    }
+
+    .box-servico {
+        border: 0;
+        border-bottom: 2px solid var(--red);
+        margin: 10px 0;
+        border-radius: 35px;
+        
+    }
+    
     
 }
+
