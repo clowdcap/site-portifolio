@@ -127,7 +127,7 @@ header .header {
 
 section .section-capa {
     width: 100%;
-    padding: 200px 5%;
+    padding: 150px 5%;
     background: var(--grad-clean);
 }
 
@@ -137,7 +137,7 @@ section .section-capa {
 
 .content-capa .registro-capa {
     background: var(--azul-medio);
-    padding: 65px 15px;
+    padding: 75px 15px;
     border-radius: 50px;
     box-shadow: 4px 4px 12px #888;
     width: 400px;
@@ -151,12 +151,24 @@ section .section-capa {
 .box-registro .top-box-registro {
     padding: 20px 0;
     background: var(--red);
+    transition: 1s;
+}
+
+.box-registro .top-box-registro:hover {
+    background: var(--azul-claro);
+    transition: 1s;
 }
 
 .box-registro .top-box-registro h2 {
     font-size: 25px;
     color: var(--claro);
     font-family: var(--Open);
+    transition: 0.5s
+}
+
+.box-registro .top-box-registro h2:hover {
+    color: var(--red);
+    transition: 0.5s
 }
 
 .box-registro .form {
@@ -182,12 +194,15 @@ section .section-capa {
     text-align: center;
     font-size: 16px;
     color: var(--claro);
+    transition: 1s;
 }
 
 .box-registro .form input[type=text]:hover,
 .box-registro .form input[type=email]:hover,
 .box-registro .form input[type=password]:hover {
     background-color: var(--azul-medio);
+    border-bottom: 2px solid var(--azul-claro);
+    transition: 1s;
 }
 
 .checkbox-box {
@@ -213,6 +228,36 @@ section .section-capa {
     transition: 0.2s;
 }
 
+.content-capa .frase-capa {
+   border-bottom: 1px solid var(--red);
+}
+
+.content-capa .frase-capa h2 {
+    font-family: var(--Open);
+    font-size: 35px;
+    font-weight: 500;
+    color:var(--azul-medio)
+}
+
+.content-capa .frase-capa h2 span {
+    font-weight: 200;
+    color: var(--azul-escuro);
+}
+
+/* Section - Chamaada Registro */
+
+section .chamada-registro {
+    background: var(--azul-medio);
+    padding: 50px 2%;
+    width: 100%;
+}
+
+.chamada-registro .content-registro{
+    background: var(--azul-escuro);
+    padding: 20px 2%;
+    border-radius: 25px;
+    box-shadow: inset 0 0 1em gold,;
+}
 
 
 /* Responsivo*/
@@ -235,7 +280,7 @@ section .section-capa {
     }
     
     section .section-capa {
-        padding: 150px 5% !important;
+        padding: 120px 5% !important;
     }
 
     .content-capa .registro-capa {
@@ -246,4 +291,6 @@ section .section-capa {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    
 }
