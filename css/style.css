@@ -280,6 +280,13 @@ section .chamada-registro {
     background: var(--red);
     border-radius: 30px;
     margin: 20px 0;
+    transition: 1s;
+}
+
+.vantagens-registro h3:hover {
+    background: var(--azul-claro);
+    color:  var(--red);
+    transition: 1s;
 }
 
 .vantagens-registro ul li {
@@ -354,6 +361,112 @@ section .chamada-registro {
     transition: 0.2s;
 }
 
+/* Serviços */
+section .servicos {
+    width: 100%;
+    padding: 60px 0;
+    background: var(--red);
+}
+
+.servicos .content-servicos {
+    border: 3px solid var(--claro);
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+}
+
+.servicos .content-servicos .box-servico {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    width: 60%;
+    text-align: center;
+}
+
+.content-servicos .box-servico h2 {
+    font-family: var(--Roboto);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: var(--azul-medio);
+    color: var(--claro);
+    border-radius: 25px;
+    box-shadow: 2px 2px 6px #555;
+}
+
+.box-servico h2:hover {
+    background-color: var(--azul-claro);
+    color: var(--azul-medio);
+}
+
+.content-servicos .box-servico ul {
+    margin-top: 30px;
+}
+
+.content-servicos .box-servico ul li span {
+    font-family: var(--Open);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--azul-escuro);
+}
+
+.content-servicos .box-servico ul li p {
+    font-family: var(--Open);
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px 0;
+    color: var(--claro);
+}
+
+.box-clientes-app {
+    width: 40%;
+    margin-left: 2%;
+    
+}
+
+.box-clientes-app h2 {
+    padding: 20px;
+    background-color: var(--azul-medio);
+    font-family: var(--Roboto);
+    font-size: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 2px 2px 6px #555;
+    color: var(--claro);
+    margin-top: 20px;
+}
+
+.box-clientes-app h2:hover {
+    background-color: var(--azul-claro);
+    color: var(--azul-medio);
+}
+
+.box-clientes {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.box-clientes ul li{
+    padding: 10px;
+    font-size: 30px;
+    color: var(--claro);
+}
+
+.box-clientes ul li p {
+    font-size: 18px;
+    color: var(--claro);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--azul-escuro);
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+
 /* Tecnologia */
 section .tecnologia {
     width: 100%;
@@ -404,6 +517,8 @@ section .tecnologia {
 }
 
 @media screen and (max-width: 720px) {
+    /* Boot */
+    
     .w33, .w40, .w50, .w60 {
         width: 100% !important;
     }
@@ -411,6 +526,9 @@ section .tecnologia {
     body {
         background: #1D3557;
     }
+    
+
+    /* Header */
 
     .menu-bar {
         display: block;
@@ -419,6 +537,8 @@ section .tecnologia {
     .menu-desktop {
         display: none;
     }
+
+     /* Section Capa */
     
     section .section-capa {
         padding: 120px 5% !important;
@@ -428,6 +548,7 @@ section .tecnologia {
         max-width: 400px;
         width: 400px;
         margin: 0 auto;
+        margin-left: 2%;
     }
 
     .newsletter {
@@ -437,10 +558,33 @@ section .tecnologia {
     .frase-capa {
         margin-top: 90px;
     }
+    
+
+     /* Section Registro */
 
     .vantagens-registro ul li  {
         padding: 8px 0 !important;
     }
+
+    /* Section Servicos */
+
+    .content-servicos {
+        display: block !important;
+    }
+
+    .box-clientes-app {
+        padding: 60px 0;
+        margin: 0 auto;
+        width: 100% !important;
+    }
+
+    .box-servico {
+        width: 100% !important;
+        padding: 20px;
+    }
+
+
+     /* Section Tecnologia */
 
     .tecnologia .content-tecnologia {
         display: block;
@@ -450,10 +594,7 @@ section .tecnologia {
         border: 0;
         border-bottom: 2px solid var(--red);
         margin: 10px 0;
-        border-radius: 35px;
-        
+        border-radius: 35px;        
     }
-    
-    
 }
 
