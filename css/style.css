@@ -533,6 +533,12 @@ section .sobre {
     width: 100%;
     border-radius: 25px;
     border: 7px solid var(--azul-medio);
+    transition: 0.5s;
+}
+
+.content-sobre .img img:hover {
+    border: 7px solid var(--red);
+    transition: 0.5s;
 }
 
 .content-sobre .dev-sobre {
@@ -542,6 +548,12 @@ section .sobre {
     box-shadow: inset 2px 2px 5px rgb(88, 106, 157);
     text-align: right;
     height: 250px;
+    transition: 0.5s;
+}
+
+.content-sobre .dev-sobre:hover {
+    background-color: rgba(208, 224, 250, 0.3);
+    transition: 0.5s;
 }
 
 .content-sobre .dev-sobre h3{
@@ -653,6 +665,21 @@ section .sobre {
         border-bottom: 2px solid var(--red);
         margin: 10px 0;
         border-radius: 35px;        
+    }
+    
+
+    /* Section Sobre */
+
+    .dev-img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .dev-sobre {
+        margin-top: 60px;
+        padding: 50px 0 !important;
+        height: auto !important;
+        text-align: center !important;
     }
 }
 
