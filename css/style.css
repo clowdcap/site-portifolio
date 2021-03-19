@@ -507,6 +507,64 @@ section .tecnologia {
 }
 
 
+/* Section Sobre */
+section .sobre {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 2%;
+    background-color: var(--azul-escuro);
+}
+
+.sobre .content-sobre {
+    background-color: rgba(71, 127, 219, 0.2);
+    padding: 50px 20px;
+    border-radius: 25px;
+    box-shadow: inset 2px 2px 5px #222;
+    margin: 0 auto;
+}
+
+.content-sobre .img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.content-sobre .img img {
+    width: 100%;
+    border-radius: 25px;
+    border: 7px solid var(--azul-medio);
+}
+
+.content-sobre .dev-sobre {
+    background-color: rgba(118, 158, 221, 0.2);
+    padding: 3%;
+    border-radius: 25px;
+    box-shadow: inset 2px 2px 5px rgb(88, 106, 157);
+    text-align: right;
+    height: 250px;
+}
+
+.content-sobre .dev-sobre h3{
+    font-family: var(--Roboto);
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--red);
+}
+
+.content-sobre .dev-sobre p {
+    font-family: var(--Open);
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--claro);
+    margin-top: 30px;
+}
+
+.content-sobre .dev-sobre span {
+    color: var(--claro);
+    font-family: var(--Open);
+    font-size: 14px;
+}
+
 
 /* Responsivo*/
 
