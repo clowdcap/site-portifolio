@@ -577,6 +577,14 @@ section .sobre {
     font-size: 14px;
 }
 
+/* Footer Contato */
+
+footer .contato {
+    width: 100%;
+    padding: 30px 2%;
+    margin: 0 auto;
+    background-color: #555;
+}
 
 /* Responsivo*/
 
