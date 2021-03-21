@@ -575,7 +575,7 @@ section .sobre {
     color: var(--claro);
     font-family: var(--Open);
     font-size: 14px;
-}
+}   
 
 /* Footer Contato */
 
@@ -585,6 +585,129 @@ footer .contato {
     margin: 0 auto;
     background-color: #555;
 }
+
+.content-contato {
+    display: flex;
+}
+
+.entre-contato {
+    width: 40%;
+    background-color: #888;
+    padding: 40px 15px;
+    text-align: center;
+    border-radius: 25px;
+    margin-right: 30px;
+}
+
+.entre-contato form {
+    background-color: var(--red);
+    box-shadow: inset 2px 2px 5px rgb(55, 55, 55);
+    transition: 0.5s;
+}
+
+.entre-contato form:hover {
+    background-color: var(--azul-claro);
+    transition: 0.5s;
+}
+
+.entre-contato h2 {
+    font-family: var(--Open);
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--claro);
+    padding: 15px 0;
+    border-radius: 0px 0px 30px 30px;
+    background: var(--azul-medio);
+    box-shadow: inset 2px 2px 5px rgb(55, 55, 55);
+    transition: 0.5s;
+}
+
+.entre-contato h2:hover {
+    color: var(--claro);
+    background-color: var(--red);
+    transition: 0.5s;
+}
+
+.entre-contato p {
+    padding: 10px 0;
+    color: var(--claro);
+    font-family: var(--Roboto);
+    font-size: 18px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+
+.entre-contato p:hover {
+    color: var(--azul-escuro);
+    transition: 0.5s
+}
+
+.entre-contato input[type=text],
+.entre-contato input[type=email] {
+    width: 80%;
+    padding: 5px 3px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--azul-medio);
+    text-align: center;
+    font-size: 16px;
+    color: var(--claro);
+    transition: 1s;
+    font-family: var(--Open);
+    font-size: 18px;
+}
+
+.entre-contato input[type=text]:hover,
+.entre-contato input[type=email]:hover {
+    background-color: var(--azul-medio);
+    border-bottom: 2px solid var(--azul-claro);
+    border-radius: 50px;
+    transition: 1s;
+}
+
+.entre-contato textarea {
+    min-width: 80%;
+    max-width: 80%;
+    width: 80%;
+    padding: 10px;
+    font-family: var(--Open);
+    font-size: 18px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--azul-medio);
+    height: 50px;
+    min-height: 50px;
+    max-height: 250px;
+    transition: 1s;
+    color: var(--claro);
+}
+
+.entre-contato textarea:hover {
+    background-color: var(--azul-medio);
+    border-bottom: 2px solid var(--azul-claro);
+    border-radius: 20px;
+    transition: 1s;
+}
+
+
+.entre-contato  input[type=submit] {
+    padding: 10px 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--azul-medio);
+    color: var(--claro);
+    margin: 30px 0;
+}
+
+.entre-contato  input[type=submit]:hover {
+    background-color: var(--red);
+    color: var(--claro);
+    transition: 0.2s;
+}
+
+
 
 /* Responsivo*/
 
